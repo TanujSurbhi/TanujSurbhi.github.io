@@ -154,26 +154,14 @@
             cd = document.querySelectorAll(elt);
 
         targetTmpDate = new Date(
-            parameters.year,
-            parameters.month - 1,
-            parameters.day,
+            2023,
+            11,
+            8,
             parameters.hours,
             parameters.minutes,
             parameters.seconds
         );
-
-        if (parameters.enableUtc) {
-            targetDate = new Date(
-                2023,
-                11,
-                8,
-                targetTmpDate.getUTCHours(),
-                targetTmpDate.getUTCMinutes(),
-                targetTmpDate.getUTCSeconds()
-            );
-        } else {
-            targetDate = targetTmpDate;
-        }
+        targetDate = targetTmpDate;
 
         Array.prototype.forEach.call(cd, function (countdown) {
             var fullCountDown = createElements(parameters, countdown),
