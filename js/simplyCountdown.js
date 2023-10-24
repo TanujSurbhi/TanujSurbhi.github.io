@@ -78,6 +78,10 @@
 
         countdown.appendChild(sectionTag);
 
+        if (typeClass === "simply-hours-section") {
+            countdown.appendChild(document.createElement('br'));
+        }
+
         return {
             full: sectionTag,
             amount: amountTag,
