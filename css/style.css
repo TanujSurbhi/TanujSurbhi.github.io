@@ -19,6 +19,10 @@ body {
   background: #fff;
 }
 
+.fh5co-cover.bg-cover {
+  background-position: top !important;
+}
+
 #page {
   position: relative;
   overflow-x: hidden;
@@ -375,7 +379,7 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   .fh5co-cover .display-t,
   .fh5co-cover .display-tc {
-    height: 600px;
+    height: 570px;
   }
 }
 .fh5co-cover.fh5co-cover-sm {
@@ -510,14 +514,15 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: 0;
   position: absolute;
   content: " ";
-  width: 1px;
+  width: 2px;
   background-color: #d4d4d4;
   left: 50%;
   margin-left: 0px;
 }
 @media screen and (max-width: 480px) {
   .timeline:before {
-    margin-left: -64px;
+    top: -14px;
+    margin-left: -40px;
   }
 }
 .timeline > li {
@@ -535,7 +540,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 40%;
   float: left;
   border: 1px solid #d4d4d4;
-  padding: 30px;
+  padding: 16px;
   position: relative;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -566,7 +571,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 480px) {
   .timeline > li > .timeline-panel {
-    width: 75% !important;
+    width: 60% !important;
   }
   .timeline > li > .timeline-panel:before {
     top: 30px;
@@ -596,13 +601,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-}
-@media screen and (max-width: 480px) {
-  .timeline > li > .timeline-badge {
-    width: 60px;
-    height: 60px;
-    margin-left: -20px !important;
-  }
+  border: 2px solid #d4d4d4;
 }
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
@@ -674,6 +673,14 @@ h1, h2, h3, h4, h5, h6, figure {
     border-right-width: 14px;
     left: -14px;
     right: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  ul.timeline > li > .timeline-badge {
+    width: 120px;
+    height: 120px;
+    top: -16px;
+    margin-left: -24px !important;
   }
 }
 #fh5co-gallery-list {
@@ -904,6 +911,7 @@ form label {
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
     font-size: 50px;
+    font-weight: 600;
   }
 }
 #fh5co-header .display-tc h2,
@@ -915,7 +923,7 @@ form label {
   font-family: "Work Sans", Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.8);
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h2,
@@ -1237,6 +1245,9 @@ form label {
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
     font-size: 40px;
+  }
+  .fh5co-heading.footer h2 {
+    font-size: 48px;
   }
 }
 .fh5co-heading p {
